@@ -21,10 +21,10 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-        /* Дублируем переменные светлой темы */ 
-      --bg-color: #fff1f7;
-      --text-color: #353430;
-      --accent-color: #ff8dcb;
-      --logo-color: #ffc2e6;   
-    }
+    /* Дублируем переменные светлой темы */
+    --bg-color: #fff1f7;
+    --text-color: #353430;
+    --accent-color: #ff8dcb;
+    --logo-color: #ffc2e6;
+  }
 }
