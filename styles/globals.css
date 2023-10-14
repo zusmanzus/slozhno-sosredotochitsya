@@ -8,7 +8,9 @@ body {
   font-family: var(--main-font, sans-serif);
   min-inline-size: 375px;
   max-inline-size: 1440px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -30,6 +32,20 @@ ul {
 picture {
   margin: 0;
   padding: 0;
+}
+
+a:focus,
+button:focus {
+  outline: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 1px solid currentColor;
+}
+
+button:disabled {
+  pointer-events: none;
 }
 
 button,
