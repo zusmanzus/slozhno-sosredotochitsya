@@ -5,13 +5,30 @@
   --logo-color: #db00ff;
 }
 
-.page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-}
-
-/* .header__rec-block::after {
+/* .page.theme_dark.header__rec-block::before {
+  position: absolute;
   content: 'rec';
+  text-transform: uppercase;
+  font-size: var(--basic-font-size);
+  right: 40px;
+  top: 10px;
+  color: var(--accent-color);
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+} */
+
+/* Не забудьте про скринридеры. Поскольку это декоративный элемент, его нужно будет скрыть при помощи aria-атрибута от читалок.  */
+
+/* .page.theme_dark.header__rec-block::after {
+  position: absolute;
+  right: 19px;
+  top: 17px;
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0px 0px 4px 3px var(--accent-color);
 } */
