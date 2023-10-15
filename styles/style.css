@@ -180,7 +180,7 @@ body {
 }
 
 .section__block__small {
-  margin-block-end: 10px !important;
+  margin-block-end: 10px;
 }
 
 .section__block__title-light {
@@ -189,6 +189,7 @@ body {
 
 .section__block__pictures-grid {
   display: grid;
+  grid-auto-flow: dense;
   gap: 10px;
 }
 
@@ -198,13 +199,117 @@ body {
 
 .footer {
   /* margin-block-start: 40px; */
-  height: 100%;
-  /* max-height: 647px; */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  min-height: 647px;
 }
 
 .footer__title {
-  margin-block-start: 23vh;
-  margin-block-end: 23vh;
+  /* margin-block-start: 23vh;
+  margin-block-end: 23vh; */
   line-height: 82.5%;
-  text-align: center;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (768px <= width) {
+  .pictures-grid-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .section__block__pictures-grid {
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+      'sunset sunset ice-cream'
+      'tape books ice-cream'
+      'tape street street';
+  }
+
+  .image__sunset {
+    grid-area: sunset;
+    object-fit: contain;
+  }
+
+  .image__ice-cream {
+    grid-area: ice-cream;
+    object-fit: cover;
+  }
+
+  .image__tape {
+    grid-area: tape;
+    object-fit: cover;
+  }
+
+  .image__street {
+    grid-area: street;
+    object-fit: contain;
+  }
+
+  .header {
+    /* margin-inline-end: 3.5vh; */
+  }
+
+  .header__rec-block::before {
+    right: 6%;
+    top: 2%;
+  }
+
+  .header__rec-block::after {
+    right: 3.75%;
+    top: 2.7%;
+  }
+
+  .header__theme-menu {
+    margin-block-start: 10vh;
+  }
+
+  .title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header__title {
+    margin-block-start: 16vh;
+    margin-inline-start: -2.5%;
+  }
+
+  .header__paragraph {
+    margin-block-start: 14.75vh;
+    margin-inline-start: 50%;
+    margin-block-end: 13vh;
+  }
+
+  .section {
+    margin-block-end: 80px;
+  }
+
+  .section:nth-of-type(2n+1) {
+    margin-block-start: 7.25vh;
+    grid-template-columns: 32.5% auto;
+    gap: 20px;
+  }
+
+  .section__problems__title {
+    max-width: 30%;
+  }
+
+  .section__block__small {
+    margin-block-end: 5vh;
+  }
+
+  .section__block__title__pictures {
+    margin-block-end: 1.75vh;
+  }
+
+  .footer {
+    min-height: 728px;
+  }
+
 }
