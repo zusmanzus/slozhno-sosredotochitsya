@@ -6,7 +6,7 @@ body {
 
 .page {
   /* max-inline-size: 375px; */
-  margin: 0;
+  margin-inline: auto;
   background-color:  var(--bg-color, #000028);
   background-image: url(../images/cover-image-dark.png);
   background-size: cover;
@@ -26,6 +26,7 @@ body {
   height: 100%;
   min-block-size: 648px;
   margin-block-end: 50px;
+  position: relative;
 }
 
 .decorated-zone::before {
@@ -58,21 +59,22 @@ body {
   content: 'rec';
   text-transform: uppercase;
   font-size: var(--basic-font-size);
-  right: 40px;
-  top: 10px;
+  right: 8%;
+  top: 0.25%;
   color: var(--accent-color);
   display: flex;
   gap: 10px;
   justify-content: flex-end;
   align-items: center;
+  line-height: 138.889%;
 }
 
 /* Не забудьте про скринридеры. Поскольку это декоративный элемент, его нужно будет скрыть при помощи aria-атрибута от читалок.  */
 
 .header__rec-block::after {
   position: absolute;
-  right: 19px;
-  top: 17px;
+  right: 2.5%;
+  top: 1.5%;
   content: '';
   width: 9px;
   height: 9px;
@@ -163,18 +165,6 @@ body {
   margin-block-end: 20px;
 }
 
-/* .section__block__paragraph {
-  line-height: 130%;
-} */
-
-/* .section__block:last-child {
-  margin-block-end: 5vi;
-} */
-
-/* .section__block__paragraph {
-  margin-block-end: 6vi;
-} */
-
 .accent__text {
   text-shadow: 2px 2px 0px var(--accent-color);
   text-decoration: none;
@@ -197,18 +187,15 @@ body {
 }
 
 .footer {
-  /* margin-block-start: 40px; */
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
   min-block-size: 647px;
   line-height: 82.5%;
 }
 
 .footer__title {
-  /* margin-block-start: 23vh;
-  margin-block-end: 23vh; */
   height: 100%;
   display: flex;
   align-content: center;
@@ -268,15 +255,15 @@ body {
   .header {
     min-block-size: 984px;
   }
-
+  
   .header__rec-block::before {
-    right: 6%;
-    top: 2%;
+    right: 4%;
+    top: 0.25%;
   }
-
+  
   .header__rec-block::after {
-    right: 3.75%;
-    top: 2.7%;
+    right: 1.5%;
+    top: 1%;
   }
 
   .header__theme-menu {
@@ -318,6 +305,7 @@ body {
 
   .footer {
     min-block-size: 984px;
+    height: 100%;
   }
 }
 
@@ -336,13 +324,13 @@ body {
   }
 
   .header__rec-block::before {
-    right: 6%;
-    top: 2%;
+    right: 3%;
+    top: 0.25%;
   }
 
   .header__rec-block::after {
-    right: 3.75%;
-    top: 2.7%;
+    right: 1%;
+    top: 1%;
   }
 
   .header__theme-menu {
@@ -392,14 +380,6 @@ body {
     grid-row: 3;
     grid-column-start: 1;
     top: 90%;
-  }
-
-  .header__rec-block::before {
-    right: 5%;
-  }
-
-  .header__rec-block::after {
-    right: 2.75%;
   }
 
   .section {
