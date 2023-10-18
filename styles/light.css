@@ -22,19 +22,18 @@
     --text-color: #353430;
     --accent-color: #ff8dcb;
     --logo-color: #ffc2e6;
+    --theme-menu-color: #353430;
+  }
+
+  .page.theme_light.header__rec-block {
+    display: none !important;
+  }
+
+  .page.theme_light.header__rec-block::before {
+    display: none !important;
+  }
+  
+  .page.theme_light.header__rec-block::after {
+    display: none !important;
   }
 }
-
-/* .page.theme_light.header__rec-block {
-  display: none !important;
-} */
-
-.page.theme_light.header__rec-block::before {
-  display: none !important;
-}
-
-.page.theme_light.header__rec-block::after {
-  display: none !important;
-}
-
-/* Не забудьте про скринридеры. Поскольку это декоративный элемент, его нужно будет скрыть при помощи aria-атрибута от читалок.  */

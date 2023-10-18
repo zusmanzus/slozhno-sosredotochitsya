@@ -3,32 +3,15 @@
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
   --logo-color: #db00ff;
+  --theme-menu-color: #ff0070;
 }
 
-/* .page.theme_dark.header__rec-block::before {
-  position: absolute;
+.theme_dark .header__rec-block::before {
   content: 'rec';
-  text-transform: uppercase;
-  font-size: var(--basic-font-size);
-  right: 40px;
-  top: 10px;
-  color: var(--accent-color);
-  display: flex;
-  gap: 10px;
-  justify-content: flex-end;
-  align-items: center;
-} */
+}
 
 /* Не забудьте про скринридеры. Поскольку это декоративный элемент, его нужно будет скрыть при помощи aria-атрибута от читалок.  */
 
-/* .page.theme_dark.header__rec-block::after {
-  position: absolute;
-  right: 19px;
-  top: 17px;
+.theme_dark .header__rec-block::after {
   content: '';
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background-color: var(--accent-color);
-  box-shadow: 0px 0px 4px 3px var(--accent-color);
-} */
+}
