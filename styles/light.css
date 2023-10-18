@@ -9,6 +9,7 @@
   --text-color: #353430;
   --accent-color: #ff8dcb;
   --logo-color: #ffc2e6;
+  --theme-menu-color: #353430;
 }
 
 .page.theme_light {
@@ -32,7 +33,7 @@
   .page.theme_light.header__rec-block::before {
     display: none !important;
   }
-  
+
   .page.theme_light.header__rec-block::after {
     display: none !important;
   }

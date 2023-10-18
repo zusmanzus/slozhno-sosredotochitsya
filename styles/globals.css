@@ -1,3 +1,7 @@
+:root {
+  --heading-color: #000028;
+}
+
 *,
 *::before,
 *::after {
@@ -58,4 +62,8 @@ a {
 button,
 a:hover {
   cursor: pointer;
+}
+
+a:hover {
+  border-bottom: 1px solid var(--text-color);
 }

@@ -7,11 +7,11 @@
 }
 
 .theme_dark .header__rec-block::before {
-  content: 'rec';
+  content: "rec";
 }
 
 /* Не забудьте про скринридеры. Поскольку это декоративный элемент, его нужно будет скрыть при помощи aria-атрибута от читалок.  */
 
 .theme_dark .header__rec-block::after {
-  content: '';
+  content: "";
 }
