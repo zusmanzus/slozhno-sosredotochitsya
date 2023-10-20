@@ -1,10 +1,4 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-:root.theme-light {
+.page.theme_light {
   --bg-color: #fff1f7;
   --text-color: #353430;
   --accent-color: #ff8dcb;
@@ -18,23 +12,10 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    /* Дублируем переменные светлой темы */
     --bg-color: #fff1f7;
     --text-color: #353430;
     --accent-color: #ff8dcb;
     --logo-color: #ffc2e6;
     --theme-menu-color: #353430;
-  }
-
-  .page.theme_light.header__rec-block {
-    display: none !important;
-  }
-
-  .page.theme_light.header__rec-block::before {
-    display: none !important;
-  }
-
-  .page.theme_light.header__rec-block::after {
-    display: none !important;
   }
 }

@@ -1,4 +1,4 @@
-:root.theme-dark {
+.page.theme_dark {
   --bg-color: #000028;
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
@@ -14,4 +14,16 @@
 
 .theme_dark .header__rec-block::after {
   content: "";
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    .theme_auto .header__rec-block::before {
+      content: "rec";
+    }
+  
+    .theme_auto .header__rec-block::after {
+      content: "";
+    }
+  }
 }
