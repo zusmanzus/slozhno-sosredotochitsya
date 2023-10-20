@@ -4,9 +4,6 @@
   --accent-color: #ff8dcb;
   --logo-color: #ffc2e6;
   --theme-menu-color: #353430;
-}
-
-.page.theme_light {
   background-image: url(../images/cover-image-light.png);
 }
 
