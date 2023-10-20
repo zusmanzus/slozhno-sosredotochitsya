@@ -159,8 +159,8 @@ body {
   text-decoration: none;
 }
 
-.section__block__small {
-  margin-block-end: 10px;
+.section__block__title__articles {
+  margin-block-end: 20px;
 }
 
 .section__block__title-light {
@@ -286,8 +286,8 @@ body {
     max-width: 30%;
   }
 
-  .section__block__small {
-    margin-block-end: 5vh;
+  .section__block__title__articles {
+    margin-block-end: 20px;
   }
 
   .footer {
@@ -372,7 +372,7 @@ body {
   }
 
   .section:nth-of-type(2n + 1) {
-    margin-block-start: 11.25vh;
+    margin-block-start: 8vh;
     grid-template-columns: 32% auto;
     gap: 20px;
   }
