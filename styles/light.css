@@ -14,5 +14,15 @@
     --accent-color: #ff8dcb;
     --logo-color: #ffc2e6;
     --theme-menu-color: #353430;
+    background-image: url(../images/cover-image-light.png);
+  }
+
+  .theme_auto {
+    --bg-color: #fff1f7;
+    --text-color: #353430;
+    --accent-color: #ff8dcb;
+    --logo-color: #ffc2e6;
+    --theme-menu-color: #353430;
+    background-image: url(../images/cover-image-light.png);
   }
 }

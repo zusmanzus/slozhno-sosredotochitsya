@@ -10,8 +10,6 @@
   content: "rec";
 }
 
-/* Не забудьте про скринридеры. Поскольку это декоративный элемент, его нужно будет скрыть при помощи aria-атрибута от читалок.  */
-
 .theme_dark .header__rec-block::after {
   content: "";
 }
@@ -24,6 +22,14 @@
   
     .theme_auto .header__rec-block::after {
       content: "";
+    }
+
+    .theme_auto {
+      --bg-color: #000028;
+      --text-color: #f1b2ce;
+      --accent-color: #ff0070;
+      --logo-color: #db00ff;
+      --theme-menu-color: #ff0070;
     }
   }
 }
